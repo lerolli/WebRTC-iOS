@@ -7,18 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE114F7B2B1F5AD400192C79 /* RTCIceConnectionState+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE114F7A2B1F5AD400192C79 /* RTCIceConnectionState+Description.swift */; };
+		CE114F7D2B205AAD00192C79 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE114F7C2B205AAD00192C79 /* VideoView.swift */; };
 		CE2B1C6B2AFCB37B00AEFCEF /* WebRTCExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2B1C6A2AFCB37B00AEFCEF /* WebRTCExampleApp.swift */; };
 		CE2B1C6D2AFCB37B00AEFCEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2B1C6C2AFCB37B00AEFCEF /* ContentView.swift */; };
 		CE2B1C6F2AFCB37C00AEFCEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2B1C6E2AFCB37C00AEFCEF /* Assets.xcassets */; };
 		CE2B1C722AFCB37C00AEFCEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2B1C712AFCB37C00AEFCEF /* Preview Assets.xcassets */; };
+		CE2B1C7B2AFCB43F00AEFCEF /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2B1C792AFCB43200AEFCEF /* WebRTC.xcframework */; };
+		CE2B1C7C2AFCB43F00AEFCEF /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE2B1C792AFCB43200AEFCEF /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE2B1C7F2AFCB51700AEFCEF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2B1C7E2AFCB51700AEFCEF /* NetworkService.swift */; };
+		CE2B1C822AFCB57900AEFCEF /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = CE2B1C812AFCB57900AEFCEF /* SocketIO */; };
+		CE2B1C842AFCB69200AEFCEF /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2B1C832AFCB69200AEFCEF /* ContentViewModel.swift */; };
+		CE2B1C862AFCBB0700AEFCEF /* WebRTCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2B1C852AFCBB0700AEFCEF /* WebRTCService.swift */; };
+		CE80CB292B1DE0B100C33798 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80CB282B1DE0B100C33798 /* Message.swift */; };
+		CE80CB2C2B1DE0F100C33798 /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80CB2B2B1DE0F100C33798 /* SessionDescription.swift */; };
+		CE80CB2E2B1DE1E000C33798 /* IceCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80CB2D2B1DE1E000C33798 /* IceCandidate.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CE2B1C7D2AFCB43F00AEFCEF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE2B1C7C2AFCB43F00AEFCEF /* WebRTC.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CE114F7A2B1F5AD400192C79 /* RTCIceConnectionState+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RTCIceConnectionState+Description.swift"; sourceTree = "<group>"; };
+		CE114F7C2B205AAD00192C79 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		CE2B1C672AFCB37B00AEFCEF /* WebRTCExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebRTCExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2B1C6A2AFCB37B00AEFCEF /* WebRTCExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCExampleApp.swift; sourceTree = "<group>"; };
 		CE2B1C6C2AFCB37B00AEFCEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE2B1C6E2AFCB37C00AEFCEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE2B1C712AFCB37C00AEFCEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE2B1C792AFCB43200AEFCEF /* WebRTC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = WebRTC.xcframework; sourceTree = "<group>"; };
+		CE2B1C7E2AFCB51700AEFCEF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		CE2B1C832AFCB69200AEFCEF /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		CE2B1C852AFCBB0700AEFCEF /* WebRTCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCService.swift; sourceTree = "<group>"; };
+		CE80CB282B1DE0B100C33798 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		CE80CB2B2B1DE0F100C33798 /* SessionDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDescription.swift; sourceTree = "<group>"; };
+		CE80CB2D2B1DE1E000C33798 /* IceCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCandidate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2B1C7B2AFCB43F00AEFCEF /* WebRTC.xcframework in Frameworks */,
+				CE2B1C822AFCB57900AEFCEF /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +87,14 @@
 		CE2B1C692AFCB37B00AEFCEF /* WebRTCExample */ = {
 			isa = PBXGroup;
 			children = (
+				CE2B1C782AFCB41A00AEFCEF /* Frameworks */,
+				CE80CB2A2B1DE0E200C33798 /* Models */,
 				CE2B1C6A2AFCB37B00AEFCEF /* WebRTCExampleApp.swift */,
 				CE2B1C6C2AFCB37B00AEFCEF /* ContentView.swift */,
+				CE114F7C2B205AAD00192C79 /* VideoView.swift */,
+				CE2B1C832AFCB69200AEFCEF /* ContentViewModel.swift */,
+				CE2B1C7E2AFCB51700AEFCEF /* NetworkService.swift */,
+				CE2B1C852AFCBB0700AEFCEF /* WebRTCService.swift */,
 				CE2B1C6E2AFCB37C00AEFCEF /* Assets.xcassets */,
 				CE2B1C702AFCB37C00AEFCEF /* Preview Content */,
 			);
@@ -67,6 +109,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CE2B1C782AFCB41A00AEFCEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE2B1C792AFCB43200AEFCEF /* WebRTC.xcframework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE80CB2A2B1DE0E200C33798 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE114F7A2B1F5AD400192C79 /* RTCIceConnectionState+Description.swift */,
+				CE80CB282B1DE0B100C33798 /* Message.swift */,
+				CE80CB2B2B1DE0F100C33798 /* SessionDescription.swift */,
+				CE80CB2D2B1DE1E000C33798 /* IceCandidate.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,12 +138,16 @@
 				CE2B1C632AFCB37B00AEFCEF /* Sources */,
 				CE2B1C642AFCB37B00AEFCEF /* Frameworks */,
 				CE2B1C652AFCB37B00AEFCEF /* Resources */,
+				CE2B1C7D2AFCB43F00AEFCEF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = WebRTCExample;
+			packageProductDependencies = (
+				CE2B1C812AFCB57900AEFCEF /* SocketIO */,
+			);
 			productName = WebRTCExample;
 			productReference = CE2B1C672AFCB37B00AEFCEF /* WebRTCExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +176,9 @@
 				Base,
 			);
 			mainGroup = CE2B1C5E2AFCB37B00AEFCEF;
+			packageReferences = (
+				CE2B1C802AFCB57900AEFCEF /* XCRemoteSwiftPackageReference "socket.io-client-swift" */,
+			);
 			productRefGroup = CE2B1C682AFCB37B00AEFCEF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +205,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2B1C842AFCB69200AEFCEF /* ContentViewModel.swift in Sources */,
+				CE114F7B2B1F5AD400192C79 /* RTCIceConnectionState+Description.swift in Sources */,
+				CE80CB2C2B1DE0F100C33798 /* SessionDescription.swift in Sources */,
 				CE2B1C6D2AFCB37B00AEFCEF /* ContentView.swift in Sources */,
+				CE80CB2E2B1DE1E000C33798 /* IceCandidate.swift in Sources */,
+				CE2B1C7F2AFCB51700AEFCEF /* NetworkService.swift in Sources */,
+				CE114F7D2B205AAD00192C79 /* VideoView.swift in Sources */,
+				CE80CB292B1DE0B100C33798 /* Message.swift in Sources */,
 				CE2B1C6B2AFCB37B00AEFCEF /* WebRTCExampleApp.swift in Sources */,
+				CE2B1C862AFCBB0700AEFCEF /* WebRTCService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -275,11 +351,14 @@
 				DEVELOPMENT_TEAM = WM98BXMW58;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) Requires camera access in order to capture and transmit video";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "$(PRODUCT_NAME) Requires microphone access in order to capture and transmit audio";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +383,14 @@
 				DEVELOPMENT_TEAM = WM98BXMW58;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) Requires camera access in order to capture and transmit video";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "$(PRODUCT_NAME) Requires microphone access in order to capture and transmit audio";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +426,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE2B1C802AFCB57900AEFCEF /* XCRemoteSwiftPackageReference "socket.io-client-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 16.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE2B1C812AFCB57900AEFCEF /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE2B1C802AFCB57900AEFCEF /* XCRemoteSwiftPackageReference "socket.io-client-swift" */;
+			productName = SocketIO;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE2B1C5F2AFCB37B00AEFCEF /* Project object */;
 }

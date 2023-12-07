@@ -1,17 +1,16 @@
-//
-//  WebRTCExampleApp.swift
-//  WebRTCExample
-//
-//  Created by User on 09.11.2023.
-//
-
 import SwiftUI
+import WebRTC
 
 @main
 struct WebRTCExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(
+                viewModel: .init(
+                    networkService: NetworkService(),
+                    webRTCService: WebRTCService()
+                )
+            )
         }
     }
 }
